@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" type="image/png" href="logotipo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles Rolls Roys - Phantom</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="compras.css">
+</head>
+<body>
+    <header>
+        <h1>Detalles Rolls Roys - Phantom </h1>
+<button id="menu-toggle">☰</button>
+<nav id="menu">
+    <ul>
+        <li><a href="catalogo.html">Carros</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="testimonios.html">Testimonios</a></li>
+    </ul>
+</nav>
+    </header>
+    <section>
+         <iframe 
+    width="800" 
+    height="450" 
+    src="https://www.youtube.com/embed/AsgXNQ0a_a8" 
+    frameborder="0" 
+    allowfullscreen>
+</iframe>
+<div class="ficha-auto">
+    <h2> Rolls-Royce Phantom: Lujo y Elegancia Suprema </h2>
+    <p>Un automóvil de alta gama que combina <strong>potencia, refinamiento y tecnología de vanguardia.</strong></p>
+
+    <div class="caracteristicas">
+        <h3> Características Técnicas</h3>
+        <ul>
+            <li><strong>Motor:</strong> V12 6.75L | <strong>Potencia:</strong> 563 HP | <strong>Par motor:</strong> 900 Nm</li>
+            <li><strong>Transmisión:</strong> Automática de 8 velocidades | <strong>Tracción:</strong> AWD</li>
+            <li><strong>Velocidad máxima:</strong>  250 km/h | <strong>Aceleración:</strong> 0-100 km/h en 5.3s</li>
+            <li><strong>Peso:</strong> 2.600 kg | <strong>Chasis:</strong> Aluminio con diseño clásico</li>
+        </ul>
+    </div>
+
+    <div class="tecnologia">
+        <h3> Tecnología y Confort</h3>
+        <ul>
+            <li><strong>Interior de lujo:</strong> Asientos de cuero ajustables con detalles en madera y metal</li>
+            <li><strong>Infotenimiento:</strong> Pantalla táctil de 12.3” con GPS y Bluetooth</li>
+            <li><strong>Seguridad avanzada:</strong> Airbags, estabilidad electrónica y frenos ventilados</li>
+        </ul>
+    </div>
+
+    <div class="opciones">
+        <h3> Opciones y Accesorios</h3>
+        <ul>
+            <li><strong>Paquete de lujo:</strong> Alfombras de seda, iluminación personalizada y detalles en madera</li>
+            <li><strong>Paquete de tecnología:</strong> Conexión Wi-Fi, navegación avanzada y carga inalámbrica</li>
+        </ul>
+    </div>
+
+    <div class="precio">
+        <h3> Precio y Garantía</h3>
+        <ul>
+            <li><strong>Precio:</strong> $460,000 USD (puede variar según impuestos)</li>
+            <li><strong>Garantía:</strong> 4 años o 80,000 millas (extensión a 6 años disponible)</li>
+        </ul>
+    </div>
+
+    <p class="cta"> ¿Listo para experimentar el lujo supremo con el Rolls-Royce Phantom?</p>
+</div>
+<button class="custom-btn btn-2" id="comprar-button">Adquerir </button>
+    
+        
+        <div id="formulario-compra" style="display: none;">
+            <h3>Formulario de Compra</h3>
+            <form>
+                <label for="nombre-comprador">Nombre completo:</label><br>
+                <input type="text" id="nombre-comprador" name="nombre-comprador" required><br><br>
+                
+                <label for="email-comprador">Correo electrónico:</label><br>
+                <input type="email" id="email-comprador" name="email-comprador" required><br><br>
+                <button class="custom-btn" onclick="window.location.href='direccion.html'">Direccion</button>
+
+
+                <section id="financiamiento">
+    <h2>Opciones de Financiamiento</h2>
+    <p>Calcula el mejor plan de pago para tu nuevo auto.</p>
+
+    <div id="simulador-financiamiento">
+        <label for="precio-auto">Precio del auto:460,000 USD</label>
+      <br>
+
+        <label for="plazo">Plazo en meses:</label>
+        <select id="plazo">
+            <option value="12">12 meses</option>
+            <option value="24">24 meses</option>
+            <option value="36">36 meses</option>
+        </select>
+
+        <label for="interes">Tasa de interés (% anual):</label>
+        <br>
+
+        <button id="calcular-financiamiento">Calcular Pago</button>
+        <p id="resultado-financiamiento"></p>
+    </div>
+
+    <h3>Opciones Disponibles</h3>
+    <ul>
+        <li>✔️ Crédito Bancario con tasas desde 5% anual</li>
+        <li>✔️ Leasing financiero para empresas y emprendedores</li>
+        <li>✔️ Pago a plazos sin interés en primeros 12 meses</li>
+    </ul>
+</section>
+                
+               
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Exotic Cars. Todos los derechos reservados.</p>
+    </footer>
+    <script src="compra_rr.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
