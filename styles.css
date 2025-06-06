@@ -1,0 +1,301 @@
+/* Estilos generales */
+body {
+ 
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Para que la página tenga al menos el alto completo */
+}
+
+/* Encabezado */
+header {
+    background: linear-gradient(90deg, #000, #333);
+    color: #fff;
+    padding: 1.5rem 0;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+nav {
+    position: fixed; /* Mantiene el menú siempre visible */
+    top: 0;
+    left: 0;
+    width: 250px; /* Ajusta el ancho según necesites */
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    background-color: #111; /* Color oscuro */
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos estén en columna */
+    gap: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ff9800;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 10px;
+    display: block;
+    transition: 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    background-color: #444;
+    border-radius: 5px;
+    color: #fff;
+}
+/* Secciones */
+section {
+    width: 90%;
+    max-width: 850px;
+    margin: 30px auto;
+    padding: 25px;
+    background: #222;
+    border-radius: 10px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
+}
+
+section h2 {
+    color: #ff9800;
+    font-size: 2rem;
+    border-bottom: 3px solid #ff9800;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Botón personalizado */
+.custom-btn {
+    width: 140px;
+    height: 45px;
+    color: #fff;
+    border-radius: 8px;
+    padding: 12px 30px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    background: linear-gradient(90deg, #ff9800, #ff5722);
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    border: none;
+    font-size: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.custom-btn:hover {
+    background: linear-gradient(90deg, #ff5722, #ff9800);
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Animación */
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.carro {
+    animation: aparecer 0.6s ease-in-out;
+}
+
+.carro img {
+    transition: transform 0.4s ease-in-out;
+}
+
+.carro img:hover {
+    transform: scale(1.1);
+}
+
+/* Estilos para la sección de carros */
+.carros-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se acomoden en líneas según el tamaño de pantalla */
+    justify-content: center;
+    gap: 20px;
+}
+
+.carro {
+    text-align: center;
+    width: 250px;
+}
+
+.carro img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Footer mejorado */
+footer {
+    width: 100%;
+    background-color: #111; /* Color oscuro */
+    color: #fff; /* Texto blanco */
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    padding: 10px 0;
+    font-size: 14px;
+    border-top: 2px solid #444; /* Línea superior */
+    margin-top: auto; /* Empuja el footer hacia abajo si hay poco contenido */
+}
+
+
+#menu-toggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #ff9800;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+    z-index: 10; /* Asegura que esté encima de otros elementos */
+}
+#menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: #111;
+    padding: 20px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.4);
+    transform: translateX(-100%); /* Oculta el menú con animación */
+    opacity: 0;
+    transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+}
+
+#menu ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#menu ul li a {
+    color: #ff9800;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    display: block;
+    transition: background 0.3s ease-in-out;
+}
+
+#menu ul li a:hover {
+    background: #444;
+    border-radius: 5px;
+}
+
+/* Cuando el menú esté activo */
+#menu.active {
+    transform: translateX(0);
+    opacity: 1;
+}
+.catalogo-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.catalogo-item {
+    background: #222;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.catalogo-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+}
+.catalogo-item img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.catalogo-item img:hover {
+    transform: scale(1.07);
+}
+.ficha-auto {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 25px;
+    background: #222;
+    color: #f4f4f4;
+    border-radius: 12px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
+    font-family: 'Poppins', sans-serif;
+}
+
+.ficha-auto h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #ff9800;
+    border-bottom: 3px solid #ff9800;
+    padding-bottom: 10px;
+}
+
+.ficha-auto h3 {
+    font-size: 1.5rem;
+    color: #ff5722;
+    margin-top: 20px;
+}
+
+.ficha-auto ul {
+    list-style: none;
+    padding: 0;
+}
+
+.ficha-auto ul li {
+    padding: 8px 0;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.ficha-auto ul li::before {
+    content: "✔️";
+    margin-right: 10px;
+    color: #ff9800;
+}
+
+.cta {
+    text-align: center;
+    font-size: 1.3rem;
+    color: #ff9800;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Efecto de elevación al pasar el cursor */
+.ficha-auto:hover {
+    transform: scale(1.02);
+    transition: 0.3s ease-in-out;
+}

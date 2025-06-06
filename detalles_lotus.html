@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" type="image/png" href="logotipo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles Lotus - Evija</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="compras.css">
+</head>
+<body>
+    <header>
+        <h1>Detalles del Lotus - Evija </h1>
+<button id="menu-toggle">☰</button>
+<nav id="menu">
+    <ul>
+        <li><a href="catalogo.html">Carros</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="testimonios.html">Testimonios</a></li>
+    </ul>
+</nav>
+    </header>
+    <section>
+     <iframe 
+    width="800" 
+    height="450" 
+    src="https://www.youtube.com/embed/_91pXnhdRcc" 
+    frameborder="0" 
+    allowfullscreen>
+</iframe>
+<div class="ficha-auto">
+    <h2> Lotus Evija: Innovación y Rendimiento </h2>
+    <p>Un superdeportivo eléctrico que combina <strong>tecnología de vanguardia y diseño aerodinámico.</strong></p>
+
+    <div class="caracteristicas">
+        <h3> Características Técnicas</h3>
+        <ul>
+            <li><strong>Motor:</strong> Eléctrico de 2.000 kW | <strong>Potencia:</strong> 2.700 HP | <strong>Batería:</strong> 70 kWh</li>
+            <li><strong>Transmisión:</strong> Una sola velocidad | <strong>Tracción:</strong> AWD</li>
+            <li><strong>Velocidad máxima:</strong>  320 km/h | <strong>Aceleración:</strong> 0-100 km/h en menos de 3s</li>
+            <li><strong>Peso:</strong> 1.680 kg | <strong>Chasis:</strong> Fibra de carbono con aerodinámica avanzada</li>
+        </ul>
+    </div>
+
+    <div class="tecnologia">
+        <h3> Tecnología y Confort</h3>
+        <ul>
+            <li><strong>Interior de lujo:</strong> Asientos de cuero ajustables y ventilados</li>
+            <li><strong>Infotenimiento:</strong> Pantalla táctil de 12.5” con GPS y Bluetooth</li>
+            <li><strong>Seguridad avanzada:</strong> Airbags, estabilidad electrónica y frenos ventilados</li>
+        </ul>
+    </div>
+
+    <div class="opciones">
+        <h3> Opciones y Accesorios</h3>
+        <ul>
+            <li><strong>Paquete de rendimiento:</strong> Suspensión ajustable y llantas de alta performance</li>
+            <li><strong>Paquete de diseño:</strong> Detalles en fibra de carbono, pintura metalizada y ruedas exclusivas</li>
+        </ul>
+    </div>
+
+    <div class="precio">
+        <h3> Precio y Garantía</h3>
+        <ul>
+            <li><strong>Precio:</strong> $2.9 millones USD (puede variar según ubicación)</li>
+            <li><strong>Garantía:</strong> 8 años o 160,000 millas (extensión disponible hasta 10 años)</li>
+        </ul>
+    </div>
+
+    <p class="cta"> ¿Listo para experimentar el futuro de la velocidad con el Lotus Evija?</p>
+</div>
+<button class="custom-btn btn-2" id="comprar-button">Adquerir </button>
+    
+        
+        <div id="formulario-compra" style="display: none;">
+            <h3>Formulario de Compra</h3>
+            <form>
+                <label for="nombre-comprador">Nombre completo:</label><br>
+                <input type="text" id="nombre-comprador" name="nombre-comprador" required><br><br>
+                
+                <label for="email-comprador">Correo electrónico:</label><br>
+                <input type="email" id="email-comprador" name="email-comprador" required><br><br>
+                
+                <button class="custom-btn" onclick="window.location.href='direccion.html'">Direccion</button>
+                <section id="financiamiento">
+    <h2>Opciones de Financiamiento</h2>
+    <p>Calcula el mejor plan de pago para tu nuevo auto.</p>
+
+    <div id="simulador-financiamiento">
+        <label for="precio-auto">Precio del auto:2.9 millones USD</label>
+        <br>
+        <label for="plazo">Plazo en meses:</label>
+        <select id="plazo">
+            <option value="12">12 meses</option>
+            <option value="24">24 meses</option>
+            <option value="36">36 meses</option>
+        </select>
+
+        <label for="interes">Tasa de interés (% anual):</label>
+       <br>
+
+        <button id="calcular-financiamiento">Calcular Pago</button>
+        <p id="resultado-financiamiento"></p>
+    </div>
+
+    <h3>Opciones Disponibles</h3>
+    <ul>
+        <li>✔️ Crédito Bancario con tasas desde 5% anual</li>
+        <li>✔️ Leasing financiero para empresas y emprendedores</li>
+        <li>✔️ Pago a plazos sin interés en primeros 12 meses</li>
+    </ul>
+</section>
+                
+                
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Exotic Cars. Todos los derechos reservados.</p>
+    </footer>
+    <script src="compra_lot.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

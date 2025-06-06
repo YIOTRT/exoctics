@@ -1,0 +1,48 @@
+/* Diseño en cuadrícula para un catálogo más organizado */
+.catalogo-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    text-align: center;
+}
+
+.catalogo-item {
+    background: #222;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.catalogo-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+}
+
+.catalogo-item img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.catalogo-item img:hover {
+    transform: scale(1.07);
+}
+
+/* Botón mejorado */
+.btn {
+    background: linear-gradient(90deg, #ff4500, #ff9800);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.btn:hover {
+    background: linear-gradient(90deg, #ff9800, #ff4500);
+    transform: scale(1.05);
+}
