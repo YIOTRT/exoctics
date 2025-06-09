@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
             doc.text(`Tasa de interés anual: ${interesAnual}%`, 20, 190);
             doc.text(`Pago mensual estimado: $${cuotaMensual.toFixed(2)}`, 20, 200);
 
-            doc.line(20, 210, 190, 210);
+            doc.line(20, 210, 190, 210, 230);
             doc.text("IMPORTANTE: Revisa los detalles antes de procesar el pago.", 20, 220);
             doc.text("No. Cuenta: 1234567812345678." 20, 230);
 
