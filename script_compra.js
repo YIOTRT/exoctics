@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
             doc.text(`Ciudad: ${direccion.ciudad}, Estado: ${direccion.estado}`, 20, 100);
             doc.text(`Código Postal: ${direccion.codigoPostal}`, 20, 110);
             doc.text(`País: ${direccion.pais}`, 20, 120);
-            doc.text(`Método de pago: ${metodoPago}`, 20, 130);
+            doc.text(`Método de pago: Deposito en cuenta`, 20, 130);
 
             // Sección financiamiento
             doc.setFont("helvetica", "bold");
