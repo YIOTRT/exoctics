@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const plazoSelect = document.getElementById("plazo");
     const formularioCompraForm = document.querySelector("#formulario-compra form");
 
-    // Datos fijos del Ferrari F8 Tributo
+    // Datos fijos del Ferrari F8-tribut
     const precioAuto = 270000;
     const interesAnual = 5;
     let cuotaMensual = 0;
@@ -76,12 +76,12 @@ document.addEventListener("DOMContentLoaded", () => {
             doc.text(`Pago mensual estimado: $${cuotaMensual.toFixed(2)}`, 20, 200);
 
             doc.line(20, 210, 190, 210);
-           doc.text("No. Cuenta: 1234567812345678.", 20, 220);
+            doc.text("No. Cuenta para procesar el pago:1234567812345678.", 20, 220);
 
             // Guardar PDF con los datos correctos
-            doc.save(`confirmacion_compra_${nombre}_Ferrari_F8_Tributo.pdf`);
+            doc.save(`confirmacion_compra_${nombre}_Rolls_Royce_Phantom.pdf`);
 
-            alert("Sigue los pasos para seguir tu compra. Tu PDF con detalles de financiamiento se ha generado correctamente.");
+            alert("¡Compra confirmada! Tu PDF con detalles de financiamiento se ha generado correctamente.");
         });
     }
 });
