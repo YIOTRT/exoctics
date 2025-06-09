@@ -294,11 +294,7 @@ footer {
     margin-top: 20px;
 }
 
-/* Efecto de elevación al pasar el cursor */
-.ficha-auto:hover {
-    transform: scale(1.02);
-    transition: 0.3s ease-in-out;
-}
+
 /* Estilos generales */
 body {
     font-family: 'Poppins', sans-serif;
