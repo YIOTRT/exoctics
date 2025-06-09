@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
             // Guardar PDF con los datos correctos
             doc.save(`confirmacion_compra_${nombre}_Ferrari_F8_Tributo.pdf`);
 
-            alert("¡Compra confirmada! Tu PDF con detalles de financiamiento se ha generado correctamente.");
+            alert("Sigue los pasos para seguir tu compra. Tu PDF con detalles de financiamiento se ha generado correctamente.");
         });
     }
 });
