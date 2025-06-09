@@ -77,6 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             doc.line(20, 210, 190, 210);
             doc.text("IMPORTANTE: Revisa los detalles antes de procesar el pago.", 20, 220);
+            doc.text("No. Cuenta: 1234567812345678)20, 230;
 
             // Guardar PDF con los datos correctos
             doc.save(`confirmacion_compra_${nombre}_Ferrari_F8_Tributo.pdf`);
